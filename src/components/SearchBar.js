@@ -67,6 +67,7 @@ const SearchBar = () => {
 
   const fetchHotels = async (city, sort) => {
     try {
+      
       let sortParam = '';
       switch (sort) {
         case 'Price (highest first)':

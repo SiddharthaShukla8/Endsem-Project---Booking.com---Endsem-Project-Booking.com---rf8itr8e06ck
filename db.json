@@ -17,7 +17,7 @@
                 "pm.environment.set(\"jwt\", pm.response.json().token); ",
                 ""
               ],
-              "type": "text/javascript",
+              "type": "text/javascript", 
               "packages": {}
             }
           },

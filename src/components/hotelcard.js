@@ -12,6 +12,7 @@ const InfoSection = ({rating,avgprice,room}) => (
       <div className="flex gap-3 items-center ">
         <p className="bg-[#003B95] text-white text-xs p-2">Rating: {rating}</p>
       </div>
+      
       <div className="flex flex-col justify-center align-center mt-8 gap-2">
         <p className="text-lg text-neutral-700">Rs.{avgprice.toFixed(0)}</p>
         <p className="text-xs text-neutral-400">+ Rs.{room.costDetails.taxesAndFees} taxes and charges</p>

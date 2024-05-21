@@ -1,8 +1,6 @@
 import React from "react";
 import { Link} from "react-router-dom";
 import {useState, useEffect} from "react";
-import {ToastContainer,toast} from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 function SignIn() {
   const [email, setEmail] = useState('')
@@ -34,14 +32,14 @@ function SignIn() {
       .then((data) => {
         console.log(data);
         localStorage.setItem('token', data.token);
-        toast.success("Successfully logged in");
+        alert("Successfully logged in");
         setTimeout(() => {
           window.location.href = '/';
         }, 2000);
       })
       .catch((error) => {
         console.error(error);
-        toast.error(error.message || 'Invalid email or password');
+        alert(error.message || 'Invalid email or password');
       });
     };
 
@@ -100,7 +98,6 @@ function SignIn() {
           </div>
         </form>
       </div>
-      <ToastContainer/>
     </div>
   );
 }
